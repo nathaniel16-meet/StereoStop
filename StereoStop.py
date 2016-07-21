@@ -25,6 +25,10 @@ def newsfeed():
 
 
 
+#@app.route('/aboutus')
+#def newsfeed():
+#	return render_template ('aboutus.html')
+
 
 
 @app.route('/profile')
