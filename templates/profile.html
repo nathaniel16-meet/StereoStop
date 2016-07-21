@@ -1,20 +1,25 @@
 {% extends "base.html" %}
 
 {% block title %}
-{{ user.firstName }}'s Profile
+{{ user.name }}'s Profile
 {% endblock %}
 
 {% block content %}
   <div class = "container">
-    <div class="row">
-      <div class="col-sm-8 offset-sm-2 col-md-4">
-        <img src = "{{user.profilePicture}}" alt = "Nathaniel Navarro" class="img-circle pull-md-left">
+      <div class=" row m-t-3">
+        <img src = "{{user.pic}}" alt = "Nathaniel Navarro" class = "img-circle m-x-auto d-block">
       </div>
-      <div class="col-sm-6 offset-sm-3 col-md-3 offset-md-1">
-      Posts: 0
+    </div>
+    <div class = "row m-t-1">
+      <div class = "col-sm-12 text-xs-center">
+        <h1>{{user.name}}</h1>
       </div>
-      <div class="col-sm-6 offset-sm-3 col-md-3 offset-md-1">
-      Broken Stereotypes:0
+    <div class = "row m-t-1">
+      <div class="col-md-6 text-xs-center">
+      <h2>Posts: 0</h2>
+      </div>
+      <div class="col-md-6 text-xs-center">
+      <h2>Broken Stereotypes:0</h2>
       </div>
     </div>
   </div>
