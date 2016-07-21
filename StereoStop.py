@@ -1,6 +1,6 @@
 from flask import Flask, render_template, url_for
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path = "", static_folder = "static")
 
 Marvin = {
   'pic': 'https://d1qb2nb5cznatu.cloudfront.net/users/1280780-large?1433430580',
