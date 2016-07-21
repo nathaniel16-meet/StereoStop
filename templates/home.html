@@ -1,30 +1,45 @@
 <html>
 
 <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <meta http-equiv="x-ua-compatible" content="ie=edge">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 
 <title> StereoStop</title>
 
 </head>
 
-<body background="dina.jpg" class='img-responsive'>
+<body background="{{ url_for('static', filename = 'dina.jpg') }}" class='img-responsive'>
 
-<div style="text-align: center; background:rgba(54, 25, 25, .5);">
-<h1> StereoStop</h1>
-<p> Changing the world by breaking one stereotype at a time!</p>
+<div style="text-align: center; background:rgba(54, 25, 25, .5); margin-top:10rem;" class="p-y-2">
+<h1 style= "color:white;">StereoStop</h1>
+<p style="color:white;"> Changing the world by breaking one stereotype at a time!</p>
 <form>
 
-	<p>
+	<p style="color:white;">
 	E-mail: <input type='text' name='e-mail'/>
 	</p>
-	<p>
+	<p style="color:white;">
 	Password: <input type='password' name='password'>
 	</p>
 	<p>
-	<input type="submit" name="newsfeed" value="Sign In">
+	
 	</p>
 </form>
-Don't have an account?
-<a href="/signup.html">Sign Up</a>
+<a class="btn btn-info" href="../news">Log in</a>
+
+<p style="color:white;">Don't have an account? </p>
+<a class="btn btn-info" href="../signup">Sign Up</a>
 </div>
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha384-rY/jv8mMhqDabXSo+UCggqKtdmBfd3qC2/KvyTDNQ6PcUJXaxK1tMepoQda4g5vB" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
 </body>
+</html>
+
+
+<!--<input class="btn btn-info" type="submit" name="news" value="Log In">  WE PUT A LINK INSTEAD!!! WE NEED TO FIX THIS WITH FORMS

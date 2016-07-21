@@ -11,11 +11,26 @@ pics = [ 'main-qimg-81ed258627de52b9eaaec07423435aff-c.jpg', 'dina.jpg', 'ballet
 
 @app.route ('/')
 def home():
-	return render_template('base.html')
+	return render_template('home.html')
+
+
+@app.route('/signup')
+def signup():
+	return render_template ('signup.html')
+
+
+@app.route('/news')
+def newsfeed():
+	return render_template ('news.html')
+
+
+
+
 
 @app.route('/profile')
 def profile():
-  return render_template('profile.html', user = Marvin, pics = pics)
+	return render_template('profile.html', user = Marvin, pics = pics)
+
 
 
 @app.errorhandler(404)
